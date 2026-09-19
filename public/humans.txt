@@ -1,4 +1,5 @@
 /* TEAM */
-Developer: Corentin Thomasset
-Site: https://github.com/CorentinTh
-Twitter: @cthmsst
+Maintainer: Đặng Quốc Phong (Phong Đặng)
+Site: https://phongdang.io.vn
+GitHub: https://github.com/dqphong0302
+Original Creator: Corentin Thomasset (https://github.com/CorentinTh)

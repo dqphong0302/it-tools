@@ -13,10 +13,10 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorPressed: 'rgba(46, 51, 56, 0.22)',
     },
     primary: {
-      color: '#18a058',
-      colorHover: '#1ea54c',
-      colorPressed: '#0C7A43',
-      colorFaded: '#18a0582f',
+      color: '#059669',
+      colorHover: '#10b981',
+      colorPressed: '#047857',
+      colorFaded: '#0596692f',
     },
     warning: {
       color: '#f59e0b',
@@ -25,10 +25,10 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorFaded: '#f59e0b2f',
     },
     success: {
-      color: '#18a058',
-      colorHover: '#36ad6a',
-      colorPressed: '#0c7a43',
-      colorFaded: '#18a0582f',
+      color: '#059669',
+      colorHover: '#10b981',
+      colorPressed: '#047857',
+      colorFaded: '#0596692f',
     },
     error: {
       color: '#d03050',
@@ -38,7 +38,7 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
     },
   },
   dark: {
-    background: '#1e1e1e',
+    background: '#0b0f19',
     text: {
       baseColor: '#ffffffd1',
       mutedColor: '#ffffff80',
@@ -49,10 +49,10 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorPressed: 'rgba(255, 255, 255, 0.24)',
     },
     primary: {
-      color: '#1ea54c',
-      colorHover: '#36AD6A',
-      colorPressed: '#0C7A43',
-      colorFaded: '#18a0582f',
+      color: '#10b981',
+      colorHover: '#34d399',
+      colorPressed: '#059669',
+      colorFaded: '#10b9812f',
     },
     warning: {
       color: '#f59e0b',
@@ -61,16 +61,16 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorFaded: '#f59e0b2f',
     },
     success: {
-      color: '#18a058',
-      colorHover: '#36ad6a',
-      colorPressed: '#0c7a43',
-      colorFaded: '#18a0582f',
+      color: '#10b981',
+      colorHover: '#34d399',
+      colorPressed: '#059669',
+      colorFaded: '#10b9812f',
     },
     error: {
-      color: '#e88080',
-      colorHover: '#e98b8b',
-      colorPressed: '#e57272',
-      colorFaded: '#e8808029',
+      color: '#f87171',
+      colorHover: '#fca5a5',
+      colorPressed: '#ef4444',
+      colorFaded: '#f8717129',
     },
   },
 });

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconBrandGithub, IconBrandX, IconInfoCircle, IconMoon, IconSun } from '@tabler/icons-vue';
+import { IconBrandGithub, IconInfoCircle, IconMoon, IconSun, IconWorld } from '@tabler/icons-vue';
 import { useStyleStore } from '@/stores/style.store';
 
 const styleStore = useStyleStore();
@@ -7,29 +7,29 @@ const { isDarkTheme } = toRefs(styleStore);
 </script>
 
 <template>
-  <c-tooltip :tooltip="$t('home.nav.github')" position="bottom">
+  <c-tooltip tooltip="GitHub Repo (dqphong0302)" position="bottom">
     <c-button
       circle
       variant="text"
-      href="https://github.com/CorentinTh/it-tools"
+      href="https://github.com/dqphong0302/it-tools"
       target="_blank"
       rel="noopener noreferrer"
-      :aria-label="$t('home.nav.githubRepository')"
+      aria-label="GitHub Repository"
     >
       <n-icon size="25" :component="IconBrandGithub" />
     </c-button>
   </c-tooltip>
 
-  <c-tooltip :tooltip="$t('home.nav.twitterX')" position="bottom">
+  <c-tooltip tooltip="Website cá nhân (phongdang.io.vn)" position="bottom">
     <c-button
       circle
       variant="text"
-      href="https://x.com/ittoolsdottech"
+      href="https://phongdang.io.vn"
       rel="noopener"
       target="_blank"
-      :aria-label="$t('home.nav.twitterXAccount')"
+      aria-label="Phong Dang Website"
     >
-      <n-icon size="25" :component="IconBrandX" />
+      <n-icon size="25" :component="IconWorld" />
     </c-button>
   </c-tooltip>
 

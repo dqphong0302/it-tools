@@ -29,21 +29,24 @@ home:
     mode: 'Toggle dark/light mode'
 about:
   content: >
-    # About IT-Tools
+    # About IT-Tools | Phong Đặng
 
-    This wonderful website, made with ❤ by [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) , aggregates useful tools for developer and people working in IT. If you find it useful, please feel free to share it to people you think may find it useful too and don't forget to bookmark it in your shortcut bar!
+    Welcome to **IT-Tools**, customized and hosted by **[Phong Đặng](https://phongdang.io.vn)**. This website aggregates essential online utilities for software developers, sysadmins, and IT engineers.
 
-    IT Tools is open-source (under the GPL-3.0 license) and free, and will always be, but it costs me money to host and renew the domain name. If you want to support my work, and encourage me to add more tools, please consider supporting by [sponsoring me](https://www.buymeacoffee.com/cthmsst).
+    All computation, conversion, encryption, and analysis tasks are performed **100% Client-Side** in your browser, guaranteeing absolute privacy and maximum speed.
+
+    ## Ecosystem & Contact
+
+    - 🌐 **Personal Website:** [phongdang.io.vn](https://phongdang.io.vn)
+    - 💻 **GitHub:** [@dqphong0302](https://github.com/dqphong0302)
+    - 📦 **Project Repository:** [github.com/dqphong0302/it-tools](https://github.com/dqphong0302/it-tools)
+    - 📧 **Email:** `phong.dang@samedtech.edu.vn`
 
     ## Technologies
 
-    IT Tools is made in Vue.js (Vue 3) with the the Naive UI component library and is hosted and continuously deployed by Vercel. Third-party open-source libraries are used in some tools, you may find the complete list in the [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) file of the repository.
+    Built with **Vue 3**, **Vite**, **Naive UI**, and **UnoCSS**, automatically deployed on the **Cloudflare Workers Edge Network** for low-latency worldwide delivery.
 
-    ## Found a bug? A tool is missing?
-
-    If you need a tool that is currently not present here, and you think can be useful, you are welcome to submit a feature request in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
-
-    And if you found a bug, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+    *Special thanks to original author [Corentin Thomasset](https://corentin.tech) for creating the initial open-source foundation.*
 
 404:
   notFound: '404 Not Found'

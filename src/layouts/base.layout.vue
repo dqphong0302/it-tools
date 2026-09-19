@@ -43,7 +43,7 @@ const tools = computed<ToolCategory[]>(() => [
           </div>
           <div class="divider" />
           <div class="subtitle">
-            {{ $t('home.subtitle') }}
+            Phong Đặng • Dev Utilities
           </div>
         </div>
       </RouterLink>
@@ -60,29 +60,20 @@ const tools = computed<ToolCategory[]>(() => [
         <CollapsibleToolMenu :tools-by-category="tools" />
 
         <div class="footer">
-          <div>
-            IT-Tools
-
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
+          <div class="font-500">
+            IT-Tools | Phong Đặng
+            <c-link target="_blank" rel="noopener" :href="`https://github.com/dqphong0302/it-tools/tree/v${version}`">
               v{{ version }}
             </c-link>
-
-            <template v-if="commitSha && commitSha.length > 0">
-              -
-              <c-link
-                target="_blank"
-                rel="noopener"
-                type="primary"
-                :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
-              >
-                {{ commitSha }}
-              </c-link>
-            </template>
           </div>
-          <div>
+          <div class="mt-1 text-xs text-neutral-400">
             © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
-              Corentin Thomasset
+            <c-link target="_blank" rel="noopener" href="https://phongdang.io.vn">
+              phongdang.io.vn
+            </c-link>
+            •
+            <c-link target="_blank" rel="noopener" href="https://github.com/dqphong0302">
+              Đặng Quốc Phong
             </c-link>
           </div>
         </div>
@@ -120,18 +111,17 @@ const tools = computed<ToolCategory[]>(() => [
           <NavbarButtons v-if="!styleStore.isSmallScreen" />
         </div>
 
-        <c-tooltip position="bottom" :tooltip="$t('home.support')">
+        <c-tooltip position="bottom" tooltip="Hệ sinh thái phongdang.io.vn">
           <c-button
             round
-            href="https://www.buymeacoffee.com/cthmsst"
+            href="https://phongdang.io.vn"
             rel="noopener"
             target="_blank"
-            class="support-button"
+            class="portal-button"
             :bordered="false"
-            @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
           >
-            {{ $t('home.buyMeACoffee') }}
-            <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
+            phongdang.io.vn
+            <NIcon v-if="!styleStore.isSmallScreen" :component="Home2" ml-2 />
           </c-button>
         </c-tooltip>
       </div>
@@ -141,27 +131,17 @@ const tools = computed<ToolCategory[]>(() => [
 </template>
 
 <style lang="less" scoped>
-// ::v-deep(.n-layout-scroll-container) {
-//     @percent: 4%;
-//     @position: 25px;
-//     @size: 50px;
-//     @color: #eeeeee25;
-//     background-image: radial-gradient(@color @percent, transparent @percent),
-//         radial-gradient(@color @percent, transparent @percent);
-//     background-position: 0 0, @position @position;
-//     background-size: @size @size;
-// }
-
-.support-button {
-  background: rgb(37, 99, 108);
-  background: linear-gradient(48deg, rgba(37, 99, 108, 1) 0%, rgba(59, 149, 111, 1) 60%, rgba(20, 160, 88, 1) 100%);
+.portal-button {
+  background: linear-gradient(135deg, #0f172a 0%, #0284c7 50%, #10b981 100%);
   color: #fff !important;
-  transition: padding ease 0.2s !important;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  transition: all ease 0.2s !important;
 
   &:hover {
     color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
   }
 }
 

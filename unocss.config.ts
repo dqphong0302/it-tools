@@ -14,14 +14,19 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
   theme: {
     colors: {
-      primary: '#1ea54c',
-
+      primary: '#10b981',
+      primaryDark: '#059669',
+      accent: '#06b6d4',
+    },
+    fontFamily: {
+      sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+      mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
     },
   },
   shortcuts: {
-    'pretty-scrollbar': 'scrollbar scrollbar-rounded scrollbar-thumb-color-gray-300 scrollbar-track-color-gray-100 dark:scrollbar-thumb-color-#424242 dark:scrollbar-track-color-#686868',
+    'pretty-scrollbar': 'scrollbar scrollbar-rounded scrollbar-thumb-color-gray-300 scrollbar-track-color-gray-100 dark:scrollbar-thumb-color-#1e293b dark:scrollbar-track-color-#0f172a',
     'divider': 'h-1px bg-current op-10',
-    'bg-surface': 'bg-#ffffff dark:bg-#232323',
-    'bg-background': 'bg-#f1f5f9 dark:bg-#1c1c1c',
+    'bg-surface': 'bg-#ffffff dark:bg-#0f172a',
+    'bg-background': 'bg-#f8fafc dark:bg-#0b0f19',
   },
 });
