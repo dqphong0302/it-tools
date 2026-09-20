@@ -27,26 +27,7 @@ home:
     darkMode: 'Dark mode'
     lightMode: 'Light mode'
     mode: 'Toggle dark/light mode'
-about:
-  content: >
-    # About IT-Tools | Phong Đặng
-
-    Welcome to **IT-Tools**, customized and hosted by **[Phong Đặng](https://phongdang.io.vn)**. This website aggregates essential online utilities for software developers, sysadmins, and IT engineers.
-
-    All computation, conversion, encryption, and analysis tasks are performed **100% Client-Side** in your browser, guaranteeing absolute privacy and maximum speed.
-
-    ## Ecosystem & Contact
-
-    - 🌐 **Personal Website:** [phongdang.io.vn](https://phongdang.io.vn)
-    - 💻 **GitHub:** [{'@'}dqphong0302](https://github.com/dqphong0302)
-    - 📦 **Project Repository:** [github.com/dqphong0302/it-tools](https://github.com/dqphong0302/it-tools)
-    - 📧 **Email:** `phong.dang{'@'}samedtech.edu.vn`
-
-    ## Technologies
-
-    Built with **Vue 3**, **Vite**, **Naive UI**, and **UnoCSS**, automatically deployed on the **Cloudflare Workers Edge Network** for low-latency worldwide delivery.
-
-    *Special thanks to original author [Corentin Thomasset](https://corentin.tech) for creating the initial open-source foundation.*
+about: {}
 
 404:
   notFound: '404 Not Found'
