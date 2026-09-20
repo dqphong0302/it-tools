@@ -38,12 +38,12 @@ const tools = computed<ToolCategory[]>(() => [
       <RouterLink to="/" class="hero-wrapper">
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
-          <div class="title">
-            IT - TOOLS
+          <div class="title tracking-wide font-700">
+            PHONG ĐẶNG
           </div>
           <div class="divider" />
-          <div class="subtitle">
-            Phong Đặng • Dev Utilities
+          <div class="subtitle text-emerald-400 font-600">
+            IT - TOOLS & DEV UTILITIES
           </div>
         </div>
       </RouterLink>
@@ -60,8 +60,8 @@ const tools = computed<ToolCategory[]>(() => [
         <CollapsibleToolMenu :tools-by-category="tools" />
 
         <div class="footer">
-          <div class="font-500">
-            IT-Tools | Phong Đặng
+          <div class="font-600 text-sm">
+            PHONG ĐẶNG DEVTOOLS
             <c-link target="_blank" rel="noopener" :href="`https://github.com/dqphong0302/it-tools/tree/v${version}`">
               v{{ version }}
             </c-link>
@@ -90,6 +90,12 @@ const tools = computed<ToolCategory[]>(() => [
         >
           <NIcon size="25" :component="Menu2" />
         </c-button>
+
+        <router-link to="/" class="no-underline flex items-center mr-1">
+          <span class="font-700 text-15px tracking-wide text-white hidden sm:inline-block">
+            PHONG ĐẶNG
+          </span>
+        </router-link>
 
         <c-tooltip :tooltip="$t('home.home')" position="bottom">
           <c-button to="/" circle variant="text" :aria-label="$t('home.home')">
